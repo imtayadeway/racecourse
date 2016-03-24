@@ -4,10 +4,11 @@ require "yaml"
 require "erb"
 
 def main
-  data = config[:profiles][profile]
   ensure_output_directory
-  File.open(File.join("output", "#{profile}.html"), "w") do |file|
-    file.write ERB.new(template).result(binding)
+  config[:profiles].each do |profile, data|
+    File.open(File.join("output", "#{profile}.html"), "w") do |file|
+      file.write ERB.new(template).result(binding)
+    end
   end
 end
 
@@ -21,18 +22,6 @@ end
 
 def config
   @config ||= YAML.load(File.open("config.yml"))
-end
-
-def profile
-  @profile ||= get_profile
-end
-
-def get_profile
-  fail "Must select a profile: `bin/generate <profile>`" unless ARGV[0]
-  unless config[:profiles].key?(ARGV[0].to_sym)
-    fail "Invalid profile: must be one of #{config[:profiles].keys.map(&:to_s).inspect}"
-  end
-  ARGV[0].to_sym
 end
 
 main
