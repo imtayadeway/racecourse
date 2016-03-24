@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><%= data[:name] %></title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+  <body id="home">
+    <div class="container">
+      <div class="row">
+        <div class="page-header">
+          <h1 class="text-center"><strong><%= data[:name] %></strong></h1>
+        </div>
+        <p class="text-center">📫 <%= data[:address] %> | ☎️ <%= data[:telephone] %> | ✉️ <%= data[:email] %></p>
+      </div>
+      <div class="row">
+        <h3>Profile</h3>
+        <% data[:profile].each do |paragraph| %>
+          <p><%= paragraph %></p>
+        <% end %>
+      </div>
+      <div class="row">
+        <h3>Work History</h3>
+        <ul class="list-unstyled">
+          <% data[:work_history].each do |work| %>
+            <li>
+              <strong><%= work[:title] %></strong> <small><%= work[:dates] %></small>
+              <strong><%= work[:employer] %></strong> <small><%= work[:city] %>, <%= work[:state] %></small>
+              <ul>
+                <% work[:achievements].each do |achievement| %>
+                  <li><%= achievement %></li>
+                <% end %>
+              </ul>
+            </li>
+            <br><!-- except last? -->
+          <% end %>
+        </ul>
+      </div>
+      <div class="row">
+        <h3>Internships</h3>
+        <ul class="list-unstyled">
+          <% data[:internships].each do |internship| %>
+            <li>
+              <strong><%= internship[:title] %> <%= internship[:year] %></strong>
+              <small><%= internship[:city] %>, <%= internship[:state] %></small>
+              <ul>
+                <% internship[:achievements].each do |achievement| %>
+                  <li><%= achievement %></li>
+                <% end %>
+              </ul>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="row">
+        <h3>Certificates</h3>
+        <ul>
+          <% data[:certificates].each do |description| %>
+            <li><%= description %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="row">
+        <h3>Skills</h3>
+        <ul class="list-inline">
+          <% data[:skills].each do |skill| %>
+            <li><%= skill %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="row">
+        <h3>Other Experience</h3>
+        <ul>
+          <% data[:other].each do |description| %>
+            <li><%= description %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="row">
+        <h3>Education</h3>
+        <% data[:education].each do |education| %>
+          <p>
+            <strong><%= education[:institution] %></strong> <%= education[:years] %><br>
+            <%= education[:city] %>, <%= education[:state] %><br>
+            <%= education[:qualification] %><br>
+          </p>
+        <% end %>
+      </div>
+    </div>
+  </body>
+</html>
