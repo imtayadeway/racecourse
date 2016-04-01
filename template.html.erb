@@ -40,7 +40,9 @@
                 <% end %>
               </ul>
             </li>
-            <br><!-- except last? -->
+            <% unless work == data[:work_history].last %>
+              <br>
+            <% end %>
           <% end %>
         </ul>
       </div>
