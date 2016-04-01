@@ -17,7 +17,7 @@ def ensure_output_directory
 end
 
 def template
-  File.read("templates/index.html.erb")
+  File.read("template.html.erb")
 end
 
 def config
