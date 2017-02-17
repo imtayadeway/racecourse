@@ -70,14 +70,16 @@
           <% end %>
         </ul>
       </div>
-      <div class="row">
-        <h3>Other Experience</h3>
-        <ul>
-          <% data[:other].each do |description| %>
-            <li><%= description %></li>
-          <% end %>
-        </ul>
-      </div>
+      <% if data[:other] %>
+        <div class="row">
+          <h3>Other Experience</h3>
+          <ul>
+            <% data[:other].each do |description| %>
+              <li><%= description %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
       <div class="row">
         <h3>Education</h3>
         <% data[:education].each do |education| %>
