@@ -33,7 +33,7 @@
           <% data[:work_history].each do |work| %>
             <li>
               <strong><%= work[:title] %></strong> <small><%= work[:dates] %></small>
-              <strong><%= work[:employer] %></strong> <small><%= work[:city] %>, <%= work[:state] %></small>
+              <strong><%= work[:employer] %></strong> <small><%= [work[:city], work[:state]].compact.join(", ") %></small>
               <ul>
                 <% work[:achievements].each do |achievement| %>
                   <li><%= achievement %></li>
