@@ -1,108 +1,114 @@
 ---
 :data: &default
-  :name: Amanda Irwin
+  :name: Tim Wade
   :address: 2525 NE 50th Ave, Portland, OR
-  :telephone: (404) 718-9925
-  :email: a00irwin@gmail.com
+  :telephone: (706) 248-7589
+  :email: hello@timjwade.com
   :profile: []
   :work_history:
-    - :title: Barista
-      :dates: February - December 2015
-      :employer: Cafe Demitasse
+    - :title: Software Engineer
+      :dates: 2015 - Present
+      :employer: Red Hat
+      :city: Portland
+      :state: OR
+      :achievements:
+        - >
+          Refactored a monolithic, three-route Rails API into many
+          object-oriented controllers. Pushed the in-controller
+          routing down into Rails' routes, providing many new
+          endpoints while reducing complexity in the
+          controllers. Extracted services where possible to facilitate
+          in more isolated testing.
+
+        - >
+          Expanded API, tested, wrote on best practices here:
+          http://timjwade.com/2016/08/01/testing-json-apis-with-rspec-composable-matchers.html
+
+        - >
+          Identified and addressed several critical security issues
+
+        - >
+          Refactored expression engine away from building strings of
+          SQL to leveraging Arel.
+
+        - >
+          Initiated the Last Week in ManageIQ blog series and continue
+          to contribute to it regularly
+
+    - :title: Ruby Engineer
+      :dates: 2014 - 2015
+      :employer: The Mobile Majority
       :city: Santa Monica
-      :state: CA
+      :state: California
       :achievements:
         - >
-          Made latte art and concocted original drink recipes in a
-          thriving and bustling downtown Santa Monica promenade
-          location. Trained new hires in all aspects of pulling the
-          perfect shot and running a clean and tight
-          kitchen. Keyholder.
-
+          Built out much of the RESTful API in Rails, conforming to
+          JSON API standards using ActiveModel::Serializers
+        - Added much of the test suite used for internal tools
         - >
-          Solely responsible for developing and delivering unique
-          seasonal products in all 3 stores across Los Angeles. Planned
-          and executed on logistics for running a stall at outdoor
-          events around Los Angeles.
+          Developed bid pacer for large MongoDB-backed ad management
+          tool, allowing compaigns to spread their budget evenly over
+          the course of the compaign instead of blowing it all in the
+          first few seconds
         - >
-          Managed product line and inventory for online store. Managed
-          the website using Spark Pay. Created content for the website,
-          including copy and photography.
+          Trained team on advanced Git usage and summarized my talks
+          in this blog post:
+            http://timjwade.com/2015/04/24/intermediate-git.html
 
-    - :title: "Owner's Assistant"
-      :dates: 2006, 2007, 2009, 2013, 2015 (seasonal)
-      :employer: Yoga Oasis
-      :city: Pahoa
-      :state: HI
-      :achievements:
-        - Managed calendar, e-mails, website, reception
-        - Did bookings and finance
-        - Worked full time in guest services and in the kitchen
-
-    - :title: Deli Team Member
-      :dates: July 2014 - January 2015
-      :employer: Daily Groceries
+    - :title: Lead Developer
+      :dates: 2012 - 2014
+      :employer: Peachtree Medical Billing
       :city: Athens
       :state: GA
       :achievements:
-        - Managed inventory, budgets and cost sheets for new products in the deli.
-        - Designed and created labels for new products using Adobe InDesign.
-        - Trained in all aspects of food preparation and kitchen management.
-
-    - :title: Server
-      :dates: June 2012-July 2015
-      :employer: Trappeze Pub
-      :city: Athens
-      :state: GA
-      :achievements:
-        - Server, hostess, and expo for a renowned craft beer pub.
         - >
-          Researched brew methods, styles and kept current with
-          innovations and new beers that were constantly coming out.
+          Principle developer on an application that parses EDI
+          documents and posts payments to Peachtree's internal
+          software, performing several hours of work in a matter of
+          seconds.  Contributor to the Stupidedi gem.
+
         - >
-          Delivered consistently excellent service in an extremely high
-          volume and fast paced environment.
+          Spearheaded future development of internal software by
+          breaking up a single large code base into smaller. pluggable
+          packages and applications and guiding development out of Ruby
+          1.8.7 and into 2.1
 
-    - :title: Race coordinator
-      :dates: August 2010 - June 2011
-      :employer: Classic Race Services
-      :city: Athens
-      :state: GA
-      :achievements:
-        - Coordinated 5k races for up to 300 participants and keeping score.
-        - MC for Awards.
-
-    - :title: Line Manager
-      :dates: August 2007-August 2008
-      :employer: Einstein Bagel
-      :city: Lawrenceville
-      :state: GA
-      :achievements:
-        - Managed and trained a team of 4-5 people.
-        - Barista, Cashier, Food preparation
-
-    - :title: Assistant Manager
-      :dates: January 2005-2010 (seasonal)
-      :employer: Shields Market
-      :city: Atlanta
-      :state: GA
-      :achievements:
         - >
-          Responsible for money, inventory, merchandising, food
-          prepartion, customer service, cashier.
-        - Innovated product line and contributed recipes for deli
+          Led end—to—end development and training in a team of up to
+          3 other developers. Introduced them to TDD and BDD. pair
+          programming, wrote much of the test suite, and initiated a
+          series of tech talks to promote best practices and new
+          technologies.
+
+        - Administered Linux, Gitolite, Gitlab and MySQL servers.
+
+    - :title: Self-employed
+      :dates: 2009-2012
+      :employer: self
+      :city: London
+      :achievements:
+        - Regular Pianist at the Palm Court, The Grand Hotel, Folkestone
+        - Piano Teacher
+        - Freelance IT technician assisting in hardware/software issues for home users and small businesses
+        - Teacher of English as a Foreign Language
+
+    - :title: Customer Service and Support
+      :dates: 2009
+      :employer: Williams' Radio and Electrical
+      :city: Folkestone
+      :achievements:
+        - Laptop, PC and electrical repair
+
+    - :title: Bookseller
+      :dates: 2002-2009
+      :employer: Harrods Children's Books/Waterstone's
+      :city: London
+      :achievements:
+        - Events and Collectors administrator
+        - Reference Buyer
+        - Responsible for merchandising and standards in flagshop Oxford Street branch
 
   :internships:
-    - :title: UGA UGarden Organic Farming Internship
-      :year: 2014
-      :city: Athens
-      :state: GA
-      :achievements:
-        - Organized volunteer program.
-        - >
-          Taught organic and local food concepts and farming
-          techniques to students.
-        - Drove a tractor.
     - :title: Satchidananda Ashram Kitchen Internship
       :year: 2012
       :city: Yogaville
@@ -113,66 +119,35 @@
         - Trained kitchen staff in food preparation.
 
   :certificates:
-    - >
-      Received 200 hour RYT certification for Yoga instruction at Vastu
-      School of Yoga and led my own yoga classes
-    - UGA Local Food Certificate
-
-  :skills:
-    - InDesign
-    - Photoshop
-    - Word
-    - Excel
-    - Powerpoint
-    - Outlook
-    - Pages
-    - Numbers
-    - Keynote
-    - HTML
-    - CSS
-    - Latte Art
+    - CELTA, Cambridge English Language Assessment
 
   :other:
-    - >
-      Farmed in France for three months through WWOOFing to learn French
-      language, culture and organic farming practice.
-    - >
-      Volunteer yoga teacher in nursing homes and donation-based yoga at
-      Rubber Soul in Athens, GA.
-    - Volunteered hospice care in Pahoa, HI.
+    - Regular contributor to This Week in Rails newsletter and blog series
+    - Contributed to RSpec, Rails, Brakeman, Rubocop
+
+  :skills:
+    - Ruby
+    - Ruby on Rails
+    - Git
+    - TDD
+    - Linux
+    - Lisp
+    - Bash
+    - Emacs
+    - RESTful APIs
 
   :education:
-    - :institution: University of GA
-      :years: 2008-14
-      :city: Athens
-      :state: GA
-      :qualification: BA English Literature and Film
-
-    - :institution: Collins Hill High School
-      :years: 2008
-      :city: Lawrenceville
-      :state: GA
-      :qualification: HS Diploma, Graduated with Honors
+    - :institution: Goldsmiths, University of London
+      :years: 2005-8
+      :city: London
+      :qualification: BMus Classical Music (1st class honours)
 
 :profiles:
-  :food:
+  :main:
     <<: *default
     :profile:
       - >
-        Amanda is a multitalented Barista, Server and Cook with a
-        passion for quality, locality, the seasonal and unexpected
-        pairings.
-
-      - >
-        She adores cinema, books and ideas which led her to pursue a
-        BA in English and Film at UGA which she completed in
-        2014. Around that time she enjoyed a multitude of
-        extracurricular activities, among them: rowing for the UGA
-        team, organic farming, pottery, painting, cooking, yoga,
-        music, and many other crafts.
-
-      - >
-        She is especially passionate about food and farming and their
-        relationship to the community and the environment. It is her
-        dream to one day own a cafe or food cart that embodies all of
-        her loves.
+        Software Engineeer for a leading Open Source company with a
+        passion for Ruby, Open Source, TDD and clean code. Experience
+        in engineering software solutions for cloud computing, medical
+        billing and mobile advertising.
