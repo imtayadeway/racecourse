@@ -70,6 +70,16 @@
           <% end %>
         </ul>
       </div>
+      <% if data[:community] %>
+        <div class="row">
+          <h3>Community</h3>
+          <ul>
+            <% data[:community].each do |item| %>
+              <li><%= item[:title] %> - <%= item[:link] %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
       <% if data[:other] %>
         <div class="row">
           <h3>Other Experience</h3>

@@ -125,6 +125,14 @@
     - Regular contributor to This Week in Rails newsletter and blog series
     - Contributed to RSpec, Rails, Brakeman, Rubocop
 
+  :community:
+    - :title: Testing JSON APIs with RSpec Composable Matchers
+      :link: http://timjwade.com/2016/08/01/testing-json-apis-with-rspec-composable-matchers.html
+    - :title: "Factories Aren't Fixtures"
+      :link: http://timjwade.com/2017/02/20/factories-arent-fixtures.html
+    - :title: What We Talk About When We Talk About Unit Testing
+      :link: https://www.youtube.com/watch?v=Pb8THg0-lo8
+
   :skills:
     - Ruby
     - Ruby on Rails
