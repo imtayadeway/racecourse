@@ -46,6 +46,26 @@
           <% end %>
         </ul>
       </div>
+      <% if data[:community] %>
+        <div class="row">
+          <h3>Community</h3>
+          <ul>
+            <% data[:community].each do |item| %>
+              <li><%= item[:title] %> - <%= item[:link] %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <% if data[:other] %>
+        <div class="row">
+          <h3>Other Experience</h3>
+          <ul>
+            <% data[:other].each do |description| %>
+              <li><%= description %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
       <div class="row">
         <h3>Internships</h3>
         <ul class="list-unstyled">
@@ -70,26 +90,6 @@
           <% end %>
         </ul>
       </div>
-      <% if data[:community] %>
-        <div class="row">
-          <h3>Community</h3>
-          <ul>
-            <% data[:community].each do |item| %>
-              <li><%= item[:title] %> - <%= item[:link] %></li>
-            <% end %>
-          </ul>
-        </div>
-      <% end %>
-      <% if data[:other] %>
-        <div class="row">
-          <h3>Other Experience</h3>
-          <ul>
-            <% data[:other].each do |description| %>
-              <li><%= description %></li>
-            <% end %>
-          </ul>
-        </div>
-      <% end %>
       <div class="row">
         <h3>Education</h3>
         <% data[:education].each do |education| %>
