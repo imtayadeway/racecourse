@@ -13,27 +13,24 @@
       :state: OR
       :achievements:
         - >
-          Refactored a monolithic, three-route Rails API into many
-          object-oriented controllers. Pushed the in-controller
-          routing down into Rails' routes, providing many new
-          endpoints while reducing complexity in the
-          controllers. Extracted services where possible to facilitate
-          in more isolated testing.
+          Refactored a monolithic, legacy Rails application into more
+          object-oriented code with smaller objects and more isolated
+          unit testing following best practices and "The Rails
+          Way". Deleted dead code and replaced home-grown solutions
+          by with popular and battle-tested open source alternatives.
 
         - >
-          Expanded API, tested, wrote on best practices here:
-          http://timjwade.com/2016/08/01/testing-json-apis-with-rspec-composable-matchers.html
+          Added many new features and endpoints to the existing JSON
+          API, trying to follow RESTful principles where possible in
+          an existing API that is a mixture of REST and RPC.
 
         - >
           Identified and addressed several critical security issues
-
-        - >
-          Refactored expression engine away from building strings of
-          SQL to leveraging Arel.
+          promptly and professionally.
 
         - >
           Initiated the Last Week in ManageIQ blog series and continue
-          to contribute to it regularly
+          to contribute to it regularly.
 
     - :title: Ruby Engineer
       :dates: 2014 - 2015
@@ -48,12 +45,7 @@
         - >
           Developed bid pacer for large MongoDB-backed ad management
           tool, allowing compaigns to spread their budget evenly over
-          the course of the compaign instead of blowing it all in the
-          first few seconds
-        - >
-          Trained team on advanced Git usage and summarized my talks
-          in this blog post:
-            http://timjwade.com/2015/04/24/intermediate-git.html
+          the course of the compaign.
 
     - :title: Lead Developer
       :dates: 2012 - 2014
@@ -62,16 +54,16 @@
       :state: GA
       :achievements:
         - >
-          Principle developer on an application that parses EDI
+          "Principle developer on an application that parses EDI
           documents and posts payments to Peachtree's internal
           software, performing several hours of work in a matter of
-          seconds.  Contributor to the Stupidedi gem.
+          seconds.  Contributor to the Stupidedi gem."
 
         - >
           Spearheaded future development of internal software by
-          breaking up a single large code base into smaller. pluggable
-          packages and applications and guiding development out of Ruby
-          1.8.7 and into 2.1
+          breaking up a monolithic large code base into
+          smaller. pluggable packages and applications and guiding
+          development out of Ruby 1.8.7 and into 2.1
 
         - >
           Led end—to—end development and training in a team of up to
@@ -94,14 +86,14 @@
 
     - :title: Customer Service and Support
       :dates: 2009
-      :employer: Williams' Radio and Electrical
+      :employer: "Williams' Radio and Electrical"
       :city: Folkestone
       :achievements:
         - Laptop, PC and electrical repair
 
     - :title: Bookseller
       :dates: 2002-2009
-      :employer: Harrods Children's Books/Waterstone's
+      :employer: "Harrods Children's Books/Waterstone's"
       :city: London
       :achievements:
         - Events and Collectors administrator
@@ -123,7 +115,7 @@
 
   :other:
     - Regular contributor to This Week in Rails newsletter and blog series
-    - Contributed to RSpec, Rails, Brakeman, Rubocop
+    - Contributed to RSpec, Rails, Brakeman, Rubocop, among other projects.
 
   :community:
     - :title: Testing JSON APIs with RSpec Composable Matchers
@@ -158,4 +150,4 @@
         Software Engineeer for a leading Open Source company with a
         passion for Ruby, Open Source, TDD and clean code. Experience
         in engineering software solutions for cloud computing, medical
-        billing and mobile advertising.
+        billing and mobile advertising, and working with legacy code.
