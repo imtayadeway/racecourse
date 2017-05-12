@@ -54,10 +54,10 @@
       :state: GA
       :achievements:
         - >
-          "Principle developer on an application that parses EDI
+          Principle developer on an application that parses EDI
           documents and posts payments to Peachtree's internal
           software, performing several hours of work in a matter of
-          seconds.  Contributor to the Stupidedi gem."
+          seconds.  Contributor to the Stupidedi gem.
 
         - >
           Spearheaded future development of internal software by
