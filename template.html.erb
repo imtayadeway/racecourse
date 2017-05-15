@@ -48,24 +48,26 @@
           <% end %>
         </ul>
       </div>
-      <div class="row">
-        <h3>Internships</h3>
-        <ul class="list-unstyled">
-          <% data[:internships].each do |internship| %>
-            <li>
-              <strong><%= internship[:title] %> <%= internship[:year] %></strong>
-              <small><%= internship[:city] %>, <%= internship[:state] %></small>
-              <% if internship[:achievements] %>
-                <ul>
-                  <% internship[:achievements].each do |achievement| %>
-                    <li><%= achievement %></li>
-                  <% end %>
-                </ul>
-              <% end %>
-            </li>
-          <% end %>
-        </ul>
-      </div>
+      <% if data[:internships] %>
+        <div class="row">
+          <h3>Internships</h3>
+          <ul class="list-unstyled">
+            <% data[:internships].each do |internship| %>
+              <li>
+                <strong><%= internship[:title] %> <%= internship[:year] %></strong>
+                <small><%= internship[:city] %>, <%= internship[:state] %></small>
+                <% if internship[:achievements] %>
+                  <ul>
+                    <% internship[:achievements].each do |achievement| %>
+                      <li><%= achievement %></li>
+                    <% end %>
+                  </ul>
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
       <% if data[:community] %>
         <div class="row">
           <h3>Community</h3>
