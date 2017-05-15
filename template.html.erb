@@ -34,11 +34,13 @@
             <li>
               <strong><%= work[:title] %></strong> <small><%= work[:dates] %></small>
               <strong><%= work[:employer] %></strong> <small><%= [work[:city], work[:state]].compact.join(", ") %></small>
-              <ul>
-                <% work[:achievements].each do |achievement| %>
-                  <li><%= achievement %></li>
-                <% end %>
-              </ul>
+              <% if work[:achievements] %>%>
+                <ul>
+                  <% work[:achievements].each do |achievement| %>
+                    <li><%= achievement %></li>
+                  <% end %>
+                </ul>
+              <% end %>
             </li>
             <% unless work == data[:work_history].last %>
               <br>
