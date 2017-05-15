@@ -75,11 +75,13 @@
             <li>
               <strong><%= internship[:title] %> <%= internship[:year] %></strong>
               <small><%= internship[:city] %>, <%= internship[:state] %></small>
-              <ul>
-                <% internship[:achievements].each do |achievement| %>
-                  <li><%= achievement %></li>
-                <% end %>
-              </ul>
+              <% if internship[:achievements] %>
+                <ul>
+                  <% internship[:achievements].each do |achievement| %>
+                    <li><%= achievement %></li>
+                  <% end %>
+                </ul>
+              <% end %>
             </li>
           <% end %>
         </ul>
