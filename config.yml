@@ -78,11 +78,6 @@
       :dates: 2009-2012
       :employer: self
       :city: London
-      :achievements:
-        - Regular Pianist at the Palm Court, The Grand Hotel, Folkestone
-        - Piano Teacher
-        - Freelance IT technician assisting in hardware/software issues for home users and small businesses
-        - Teacher of English as a Foreign Language
 
     - :title: Customer Service and Support
       :dates: 2009
@@ -95,20 +90,12 @@
       :dates: 2002-2009
       :employer: "Harrods Children's Books/Waterstone's"
       :city: London
-      :achievements:
-        - Events and Collectors administrator
-        - Reference Buyer
-        - Responsible for merchandising and standards in flagshop Oxford Street branch
 
   :internships:
     - :title: Satchidananda Ashram Kitchen Internship
       :year: 2012
       :city: Yogaville
       :state: VA
-      :achievements:
-        - Preparing vegetarian and ayurvedic meals for 100+ guests and employees.
-        - Participated in a special event to cater for over 500 people.
-        - Trained kitchen staff in food preparation.
 
   :certificates:
     - CELTA, Cambridge English Language Assessment
