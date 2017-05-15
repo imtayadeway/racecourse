@@ -79,13 +79,6 @@
       :employer: self
       :city: London
 
-    - :title: Customer Service and Support
-      :dates: 2009
-      :employer: "Williams' Radio and Electrical"
-      :city: Folkestone
-      :achievements:
-        - Laptop, PC and electrical repair
-
     - :title: Bookseller
       :dates: 2002-2009
       :employer: "Harrods Children's Books/Waterstone's"
