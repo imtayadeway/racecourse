@@ -84,14 +84,16 @@
           </ul>
         </div>
       <% end %>
-      <div class="row">
-        <h3>Certificates</h3>
-        <ul>
-          <% data[:certificates].each do |description| %>
-            <li><%= description %></li>
-          <% end %>
-        </ul>
-      </div>
+      <% if data[:certificates] %>
+        <div class="row">
+          <h3>Certificates</h3>
+          <ul>
+            <% data[:certificates].each do |description| %>
+              <li><%= description %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
       <div class="row">
         <h3>Education</h3>
         <% data[:education].each do |education| %>
