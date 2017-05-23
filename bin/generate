@@ -1,11 +1,15 @@
 #!/usr/bin/env ruby
 
+$LOAD_PATH << File.expand_path("../lib", __dir__)
+
+require "racecourse"
 require "yaml"
 require "erb"
 
 def main
   ensure_output_directory
-  config[:profiles].each do |profile, data|
+  config[:profiles].each do |name, data|
+    profile = Racecourse::Profile.new(data)
     File.open(File.join("output", "#{profile}.html"), "w") do |file|
       file.write ERB.new(template).result(binding)
     end

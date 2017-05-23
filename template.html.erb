@@ -2,27 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title><%= data[:name] %></title>
+    <title><%= profile.name %></title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
   </head>
   <body id="home">
     <div class="container">
       <div class="row">
         <div class="page-header">
-          <h1 class="text-center"><strong><%= data[:name] %></strong></h1>
+          <h1 class="text-center"><strong><%= profile.name %></strong></h1>
         </div>
-        <p class="text-center">📫 <%= data[:address] %> | ☎️ <%= data[:telephone] %> | ✉️ <%= data[:email] %></p>
+        <p class="text-center">📫 <%= profile.address %> | ☎️ <%= profile.telephone %> | ✉️ <%= profile.email %></p>
       </div>
       <div class="row">
         <h3>Profile</h3>
-        <% data[:profile].each do |paragraph| %>
+        <% profile.profile.each do |paragraph| %>
           <p><%= paragraph %></p>
         <% end %>
       </div>
       <div class="row">
         <h3>Skills</h3>
         <ul class="list-inline">
-          <% data[:skills].each do |skill| %>
+          <% profile.skills.each do |skill| %>
             <li><%= skill %></li>
           <% end %>
         </ul>
@@ -30,35 +30,35 @@
       <div class="row">
         <h3>Work History</h3>
         <ul class="list-unstyled">
-          <% data[:work_history].each do |work| %>
+          <% profile.work_history.each do |work| %>
             <li>
-              <strong><%= work[:title] %></strong> <small><%= work[:dates] %></small>
-              <strong><%= work[:employer] %></strong> <small><%= [work[:city], work[:state]].compact.join(", ") %></small>
-              <% if work[:achievements] %>%>
+              <strong><%= work.title %></strong> <small><%= work.dates %></small>
+              <strong><%= work.employer %></strong> <small><%= [work.city, work.state].compact.join(", ") %></small>
+              <% if work.achievements %>%>
                 <ul>
-                  <% work[:achievements].each do |achievement| %>
+                  <% work.achievements.each do |achievement| %>
                     <li><%= achievement %></li>
                   <% end %>
                 </ul>
               <% end %>
             </li>
-            <% unless work == data[:work_history].last %>
+            <% unless work == profile.work_history.last %>
               <br>
             <% end %>
           <% end %>
         </ul>
       </div>
-      <% if data[:internships] %>
+      <% if profile.internships %>
         <div class="row">
           <h3>Internships</h3>
           <ul class="list-unstyled">
-            <% data[:internships].each do |internship| %>
+            <% profile.internships.each do |internship| %>
               <li>
-                <strong><%= internship[:title] %> <%= internship[:year] %></strong>
-                <small><%= internship[:city] %>, <%= internship[:state] %></small>
-                <% if internship[:achievements] %>
+                <strong><%= internship.title %> <%= internship.year %></strong>
+                <small><%= internship.city %>, <%= internship.state %></small>
+                <% if internship.achievements %>
                   <ul>
-                    <% internship[:achievements].each do |achievement| %>
+                    <% internship.achievements.each do |achievement| %>
                       <li><%= achievement %></li>
                     <% end %>
                   </ul>
@@ -68,27 +68,27 @@
           </ul>
         </div>
       <% end %>
-      <% if data[:community] %>
+      <% if profile.community %>
         <div class="row">
           <h3>Community</h3>
           <ul>
-            <% data[:community][:blogposts].each do |blogpost| %>
-              <li><%= blogpost[:title] %> - <%= blogpost[:link] %></li>
+            <% profile.community.blogposts.each do |blogpost| %>
+              <li><%= blogpost.title %> - <%= blogpost.link %></li>
             <% end %>
-            <% data[:community][:talks].each do |talk| %>
-              <li><%= talk[:title] %> - <%= talk[:link] %></li>
+            <% profile.community.talks.each do |talk| %>
+              <li><%= talk.title %> - <%= talk.link %></li>
             <% end %>
-            <% data[:community][:other].each do |item| %>
+            <% profile.community.other.each do |item| %>
               <li><%= item %></li>
             <% end %>
           </ul>
         </div>
       <% end %>
-      <% if data[:certificates] %>
+      <% if profile.certificates %>
         <div class="row">
           <h3>Certificates</h3>
           <ul>
-            <% data[:certificates].each do |description| %>
+            <% profile.certificates.each do |description| %>
               <li><%= description %></li>
             <% end %>
           </ul>
@@ -96,11 +96,11 @@
       <% end %>
       <div class="row">
         <h3>Education</h3>
-        <% data[:education].each do |education| %>
+        <% profile.education.each do |education| %>
           <p>
-            <strong><%= education[:institution] %></strong> <%= education[:years] %><br>
-            <%= education[:city] %>, <%= education[:state] %><br>
-            <%= education[:qualification] %><br>
+            <strong><%= education.institution %></strong> <%= education.years %><br>
+            <%= education.city %>, <%= education.state %><br>
+            <%= education.qualification %><br>
           </p>
         <% end %>
       </div>
