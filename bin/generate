@@ -10,7 +10,7 @@ def main
   ensure_output_directory
   config[:profiles].each do |name, data|
     profile = Racecourse::Profile.new(data)
-    File.open(File.join("output", "#{profile}.html"), "w") do |file|
+    File.open(File.join("output", "#{name}.html"), "w") do |file|
       file.write ERB.new(template).result(binding)
     end
   end
