@@ -48,7 +48,7 @@
           <% end %>
         </ul>
       </div>
-      <% if profile.internships %>
+      <% if profile.internships.any? %>
         <div class="row">
           <h3>Internships</h3>
           <ul class="list-unstyled">
@@ -84,7 +84,7 @@
           </ul>
         </div>
       <% end %>
-      <% if profile.certificates %>
+      <% if profile.certificates.any? %>
         <div class="row">
           <h3>Certificates</h3>
           <ul>
