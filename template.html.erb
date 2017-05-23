@@ -16,7 +16,7 @@
       <div class="row">
         <h3>Profile</h3>
         <% profile.profile.each do |paragraph| %>
-          <p><%= paragraph %></p>
+          <small><%= paragraph %></small>
         <% end %>
       </div>
       <div class="row">
@@ -35,7 +35,7 @@
               <strong><%= work.title %></strong> <small><%= work.dates %></small>
               <strong><%= work.employer %></strong> <small><%= [work.city, work.state].compact.join(", ") %></small>
               <% if work.achievements %>%>
-                <ul>
+                <ul class="small">
                   <% work.achievements.each do |achievement| %>
                     <li><%= achievement %></li>
                   <% end %>
@@ -68,7 +68,7 @@
       <% if profile.community %>
         <div class="row">
           <h3>Community</h3>
-          <ul>
+          <ul class="small">
             <% profile.community.blogposts.each do |blogpost| %>
               <li><%= blogpost.title %> - <%= blogpost.link %></li>
             <% end %>
@@ -94,11 +94,11 @@
       <div class="row">
         <h3>Education</h3>
         <% profile.education.each do |education| %>
-          <p>
+          <small>
             <strong><%= education.institution %></strong> <%= education.years %><br>
             <%= education.city %>, <%= education.state %><br>
             <%= education.qualification %><br>
-          </p>
+          </small>
         <% end %>
       </div>
     </div>
