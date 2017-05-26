@@ -19,14 +19,16 @@
           <small><%= paragraph %></small>
         <% end %>
       </div>
-      <div class="row">
-        <h3>Skills</h3>
-        <ul class="list-inline">
-          <% profile.skills.each do |skill| %>
-            <li><%= skill %></li>
-          <% end %>
-        </ul>
-      </div>
+      <% if profile.skills.any? %>
+        <div class="row">
+          <h3>Skills</h3>
+          <ul class="list-inline">
+            <% profile.skills.each do |skill| %>
+              <li><%= skill %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
       <div class="row">
         <h3>Work History</h3>
         <ul class="list-unstyled">

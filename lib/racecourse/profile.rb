@@ -33,7 +33,7 @@ module Racecourse
     end
 
     def skills
-      data[:skills]
+      Array(data[:skills])
     end
 
     def education
