@@ -14,14 +14,14 @@
         <p class="text-center">📫 <%= profile.address %> | ☎️ <%= profile.telephone %> | ✉️ <%= profile.email %></p>
       </div>
       <div class="row">
-        <h3>Profile</h3>
+        <h4>Profile</h4>
         <% profile.profile.each do |paragraph| %>
           <small><%= paragraph %></small>
         <% end %>
       </div>
       <% if profile.skills.any? %>
         <div class="row">
-          <h3>Skills</h3>
+          <h4>Skills</h4>
           <ul class="list-inline">
             <% profile.skills.each do |skill| %>
               <li><%= skill %></li>
@@ -30,7 +30,7 @@
         </div>
       <% end %>
       <div class="row">
-        <h3>Work History</h3>
+        <h4>Work History</h4>
         <ul class="list-unstyled">
           <% profile.work_history.each do |work| %>
             <li>
@@ -49,7 +49,7 @@
       </div>
       <% if profile.internships.any? %>
         <div class="row">
-          <h3>Internships</h3>
+          <h4>Internships</h4>
           <ul class="list-unstyled">
             <% profile.internships.each do |internship| %>
               <li>
@@ -69,7 +69,7 @@
       <% end %>
       <% if profile.community %>
         <div class="row">
-          <h3>Community</h3>
+          <h4>Community</h4>
           <ul class="small">
             <% profile.community.blogposts.each do |blogpost| %>
               <li><%= blogpost.title %> - <%= blogpost.link %></li>
@@ -85,7 +85,7 @@
       <% end %>
       <% if profile.certificates.any? %>
         <div class="row">
-          <h3>Certificates</h3>
+          <h4>Certificates</h4>
           <ul>
             <% profile.certificates.each do |description| %>
               <li><%= description %></li>
@@ -94,7 +94,7 @@
         </div>
       <% end %>
       <div class="row">
-        <h3>Education</h3>
+        <h4>Education</h4>
         <% profile.education.each do |education| %>
           <small>
             <strong><%= education.institution %></strong> <%= education.years %><br>
