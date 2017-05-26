@@ -14,10 +14,9 @@
       :achievements:
         - >
           Refactored a monolithic, legacy Rails application into more
-          object-oriented code with smaller objects and more isolated
-          unit testing following best practices and "The Rails
-          Way". Deleted dead code and replaced home-grown solutions
-          by with popular and battle-tested open source alternatives.
+          object-oriented code with more isolated unit
+          testing. Deleted dead code and replaced home-grown solutions
+          with popular and battle-tested open source alternatives.
 
         - >
           Added many new features and endpoints to the existing JSON
@@ -39,13 +38,13 @@
       :state: California
       :achievements:
         - >
-          Built out much of the RESTful API in Rails, conforming to
-          JSON API standards using ActiveModel::Serializers
-        - Added much of the test suite used for internal tools
-        - >
           Developed bid pacer for large MongoDB-backed ad management
           tool, allowing compaigns to spread their budget evenly over
           the course of the compaign.
+        - >
+          Built out much of the RESTful API in Rails, conforming to
+          JSON API standards using ActiveModel::Serializers
+        - Retrofitted much of the test suite used for legacy internal tools
 
     - :title: Lead Developer
       :dates: 2012 - 2014
