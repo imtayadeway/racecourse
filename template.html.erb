@@ -36,7 +36,7 @@
             <li>
               <strong><%= work.title %></strong> <small><%= work.dates %></small>
               <strong><%= work.employer %></strong> <small><%= [work.city, work.state].compact.join(", ") %></small>
-              <% if work.achievements %>%>
+              <% if work.achievements %>
                 <ul class="small">
                   <% work.achievements.each do |achievement| %>
                     <li><%= achievement %></li>
