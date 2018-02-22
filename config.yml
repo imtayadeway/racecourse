@@ -19,17 +19,20 @@
           with popular and battle-tested open source alternatives.
 
         - >
-          Added many new features and endpoints to the existing JSON
-          API, trying to follow RESTful principles where possible in
-          an existing API that is a mixture of REST and RPC.
+          Added new features and endpoints to the existing JSON
+          API, promoting RESTful principles.
 
         - >
-          Identified and addressed several critical security issues
+          Identified and addressed multiple critical security issues
           promptly and professionally.
 
         - >
           Initiated the Last Week in ManageIQ blog series and continue
           to contribute to it regularly.
+
+        - >
+          Currently building out a new GraphQL API in Ruby that will
+          become V2 of Cloudforms' public API
 
     - :title: Ruby Engineer
       :dates: 2014 - 2015
@@ -40,10 +43,11 @@
         - >
           Developed bid pacer for large MongoDB-backed ad management
           tool, allowing compaigns to spread their budget evenly over
-          the course of the compaign.
+          the course of the campaign.
         - >
           Built out much of the RESTful API in Rails, conforming to
           JSON API standards using ActiveModel::Serializers
+
         - Retrofitted much of the test suite used for legacy internal tools
 
     - :title: Lead Developer
@@ -53,10 +57,10 @@
       :state: GA
       :achievements:
         - >
-          Principle developer on an application that parses EDI
-          documents and posts payments to Peachtree's internal
-          software, performing several hours of work in a matter of
-          seconds.  Contributor to the Stupidedi gem.
+          Built an application that parses EDI documents and posts
+          payments to Peachtree's internal software, performing hours
+          of work in a matter of seconds.  Contributor to the
+          Stupidedi gem.
 
         - >
           Spearheaded future development of internal software by
@@ -86,15 +90,16 @@
   :community:
     :blogposts:
       - :title: Testing JSON APIs with RSpec Composable Matchers
-        :link: http://timjwade.com/2016/08/01/testing-json-apis-with-rspec-composable-matchers.html
+        :link: https://tinyurl.com/y9wrorfh
       - :title: "Factories Aren't Fixtures"
-        :link: http://timjwade.com/2017/02/20/factories-arent-fixtures.html
+        :link: https://tinyurl.com/y7xe4da7
     :talks:
       - :title: What We Talk About When We Talk About Unit Testing
-        :link: https://www.youtube.com/watch?v=Pb8THg0-lo8
+        :link: https://tinyurl.com/yc4ejagc
     :other:
       - Regular contributor to This Week in Rails newsletter and blog series
       - Contributed to RSpec, Rails, Brakeman, Rubocop, among other projects.
+      - Hosts Ruby Coworking for pdx.rb and films their monthly meetups for their Youtube channel
 
   :education:
     - :institution: Goldsmiths, University of London
