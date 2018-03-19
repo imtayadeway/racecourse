@@ -13,26 +13,28 @@
       :state: OR
       :achievements:
         - >
-          Refactored a monolithic, legacy Rails application into more
-          object-oriented code with more isolated unit
-          testing. Deleted dead code and replaced home-grown solutions
-          with popular and battle-tested open source alternatives.
+          Built new endpoints for the existing JSON API while tackling
+          technical debt, promoting RESTful principles, and did
+          foundational work on a new version of the API implemented to
+          the GraphQL specification.
 
         - >
-          Added new features and endpoints to the existing JSON
-          API, promoting RESTful principles.
+          Designed and implemented the service order API, allowing
+          users to compose new services from items in a catalog, one
+          of the key features of the Self Service UI.
 
         - >
-          Identified and addressed multiple critical security issues
-          promptly and professionally.
+          Implemented a SQL-based session store that could be
+          configured to allow customers to scale their appliance
+          horizontally to fit their needs.
+
+        - >
+          Identified and addressed critical security issues promptly
+          and professionally.
 
         - >
           Initiated the Last Week in ManageIQ blog series and continue
           to contribute to it regularly.
-
-        - >
-          Currently building out a new GraphQL API in Ruby that will
-          become V2 of Cloudforms' public API
 
     - :title: Ruby Engineer
       :dates: 2014 - 2015
@@ -41,14 +43,17 @@
       :state: California
       :achievements:
         - >
-          Developed bid pacer for large MongoDB-backed ad management
-          tool, allowing compaigns to spread their budget evenly over
-          the course of the campaign.
-        - >
-          Built out much of the RESTful API in Rails, conforming to
-          JSON API standards using ActiveModel::Serializers
+          Developed bid pacer service for large MongoDB-backed ad
+          management tool, allowing compaigns to spread their budget
+          evenly over the course of the campaign.
 
-        - Retrofitted much of the test suite used for legacy internal tools
+        - >
+          Extended Rails' own configuration to allow DevOps engineers
+          to configure and spin up arbitrary environments.
+
+        - >
+          Built out much of the RESTful API in Rails, providing a
+          gateway for all backend microservices.
 
     - :title: Lead Developer
       :dates: 2012 - 2014
@@ -88,18 +93,11 @@
       :city: London
 
   :community:
-    :blogposts:
-      - :title: Testing JSON APIs with RSpec Composable Matchers
-        :link: https://tinyurl.com/y9wrorfh
-      - :title: "Factories Aren't Fixtures"
-        :link: https://tinyurl.com/y7xe4da7
-    :talks:
-      - :title: What We Talk About When We Talk About Unit Testing
-        :link: https://tinyurl.com/yc4ejagc
     :other:
+      - Wrote and talked about TDD and other aspects of testing
       - Regular contributor to This Week in Rails newsletter and blog series
       - Contributed to RSpec, Rails, Brakeman, Rubocop, among other projects.
-      - Hosts Ruby Coworking for pdx.rb and films their monthly meetups for their Youtube channel
+      - Hosts Ruby Coworking for pdx.rb and films their monthly meetups for their YouTube channel
 
   :education:
     - :institution: Goldsmiths, University of London
