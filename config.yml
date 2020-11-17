@@ -18,16 +18,21 @@
       :state: OR
       :achievements:
         - >
-          Adding MFA, device activation and account recovery
-          to Heroku authentication, which is currently in private beta.
+          Adding MFA, device activation and account recovery to Heroku
+          authentication, which is currently in private beta. Led
+          efforts to adapt parts of our Identity application for
+          general use and extract them into a privately maintained
+          gem, allowing other components in our platform to integrate
+          with other services within Salesforce effortlessly.
 
         - >
-          Built out the next generation Heroku addons platform using
-          the Open Service Broker specification.
+          Led the greenfield development of resource binding in the
+          next generation Heroku addons platform, bridging a new
+          GraphQL API to the Open Service Broker specification.
 
         - >
-          Led a team in PostgreSQL query optimization as part of
-          ongoing sustainability work.
+          Led and mentored a team in PostgreSQL query optimization as
+          part ongoing sustainability work.
 
     - :title: Software Engineer
       :dates: 2015 - 2018
@@ -35,10 +40,6 @@
       :city: Portland
       :state: OR
       :achievements:
-        - >
-          Did foundational work on a new version of the API implemented to
-          the GraphQL specification.
-
         - >
           Designed and implemented the service order API, allowing
           users to compose new services easefully from items in a
@@ -50,7 +51,9 @@
           horizontally to fit their needs.
 
         - >
-          Initiated the Last Week in ManageIQ blog series.
+          Initiated the Last Week in ManageIQ blog series to both
+          promote the latest developments to our platform and better
+          engage with the Open Source communityi
 
     - :title: Ruby Engineer
       :dates: 2014 - 2015
@@ -94,7 +97,7 @@
 
   :community:
     :other:
-      - Blogged and presented about TDD and other aspects of testing.
+      - Blogged and have given talks about TDD and other aspects of testing.
       - Regular contributor to This Week in Rails newsletter and blog series.
       - Contributed to RSpec, Rails, Brakeman, Rubocop, among other projects.
       - Hosts Ruby Coworking for pdx.rb (on hiatus owing to Covid).
