@@ -6,22 +6,43 @@
   :email: hello@timjwade.com
   :profile: []
   :work_history:
+    - :title: Lead Software Engineer
+      :dates: 2020 - Present
+      :employer: Heroku (Salesforce)
+      :city: Portland
+      :state: OR
+    - :title: Senior Software Engineer
+      :dates: 2018 - 2020
+      :employer: Heroku (Salesforce)
+      :city: Portland
+      :state: OR
+      :achievements:
+        - >
+          Adding MFA, device activation and account recovery
+          to Heroku authentication, which is currently in private beta.
+
+        - >
+          Built out the next generation Heroku addons platform using
+          the Open Service Broker specification.
+
+        - >
+          Led a team in PostgreSQL query optimization as part of
+          ongoing sustainability work.
+
     - :title: Software Engineer
-      :dates: 2015 - Present
+      :dates: 2015 - 2018
       :employer: Red Hat
       :city: Portland
       :state: OR
       :achievements:
         - >
-          Built new endpoints for the existing JSON API while tackling
-          technical debt, promoting RESTful principles, and did
-          foundational work on a new version of the API implemented to
+          Did foundational work on a new version of the API implemented to
           the GraphQL specification.
 
         - >
           Designed and implemented the service order API, allowing
-          users to compose new services from items in a catalog, one
-          of the key features of the Self Service UI.
+          users to compose new services easefully from items in a
+          catalog.
 
         - >
           Implemented a SQL-based session store that could be
@@ -29,12 +50,7 @@
           horizontally to fit their needs.
 
         - >
-          Identified and addressed critical security issues promptly
-          and professionally.
-
-        - >
-          Initiated the Last Week in ManageIQ blog series and continue
-          to contribute to it regularly.
+          Initiated the Last Week in ManageIQ blog series.
 
     - :title: Ruby Engineer
       :dates: 2014 - 2015
@@ -47,15 +63,7 @@
           management tool, allowing compaigns to spread their budget
           evenly over the course of the campaign.
 
-        - >
-          Extended Rails' own configuration to allow DevOps engineers
-          to configure and spin up arbitrary environments.
-
-        - >
-          Built out much of the RESTful API in Rails, providing a
-          gateway for all backend microservices.
-
-    - :title: Lead Developer
+    - :title: Software Developer
       :dates: 2012 - 2014
       :employer: Peachtree Medical Billing
       :city: Athens
@@ -68,19 +76,11 @@
           Stupidedi gem.
 
         - >
-          Spearheaded future development of internal software by
-          breaking up a monolithic large code base into
-          smaller. pluggable packages and applications and guiding
-          development out of Ruby 1.8.7 and into 2.1
-
-        - >
           Led end—to—end development and training in a team of up to
           3 other developers. Introduced them to TDD and BDD. pair
           programming, wrote much of the test suite, and initiated a
           series of tech talks to promote best practices and new
           technologies.
-
-        - Administered Linux, Gitolite, Gitlab and MySQL servers.
 
     - :title: Pianist and Music Teacher
       :dates: 2009-2012
@@ -94,10 +94,10 @@
 
   :community:
     :other:
-      - Blogged and talked about TDD and other aspects of testing.
+      - Blogged and presented about TDD and other aspects of testing.
       - Regular contributor to This Week in Rails newsletter and blog series.
       - Contributed to RSpec, Rails, Brakeman, Rubocop, among other projects.
-      - Hosts Ruby Coworking for pdx.rb and films their monthly meetups for their YouTube channel.
+      - Hosts Ruby Coworking for pdx.rb (on hiatus owing to Covid).
 
   :education:
     - :institution: Goldsmiths, University of London
@@ -110,8 +110,8 @@
     <<: *default
     :profile:
       - >
-        Software Engineer for a leading Open Source company with a
-        passion for Ruby, Open Source, TDD and clean code. Experience
-        in engineering software solutions for cloud computing, medical
-        billing and mobile advertising. Expertise in Object Oriented
-        Design, RESTful APIs and working with legacy code.
+        Software Engineer with a passion for Ruby, PostgreSQL and
+        TDD. Experience in engineering software solutions for cloud
+        computing, medical billing and mobile advertising. Expertise
+        in Object Oriented Design, RESTful APIs, PostgreSQL and
+        working with legacy code.
