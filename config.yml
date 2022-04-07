@@ -1,7 +1,7 @@
 ---
 :data: &default
   :name: Tim Wade
-  :address: 2525 NE 50th Ave, Portland, OR
+  :address: 2603 SE 51st Ave, Portland, OR
   :telephone: (706) 248-7589
   :email: hello@timjwade.com
   :profile: []
@@ -99,10 +99,10 @@
 
   :community:
     :other:
-      - Blogged and have given talks about TDD and other aspects of testing.
       - Regular contributor to This Week in Rails newsletter and blog series.
       - Contributed to RSpec, Rails, Brakeman, Rubocop, among other projects.
-      - Hosts Ruby Coworking for pdx.rb (on hiatus owing to Covid).
+      - Currently working on expanding APIs for configuring Content Security Policy in Rails
+      - Hosted Ruby Coworking for pdx.rb (on hiatus owing to Covid).
 
   :education:
     - :institution: Goldsmiths, University of London
