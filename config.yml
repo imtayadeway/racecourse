@@ -18,21 +18,23 @@
       :state: OR
       :achievements:
         - >
-          Adding MFA, device activation and account recovery to Heroku
-          authentication, which is currently in beta. Led efforts to
-          adapt parts of our Identity application for general use and
-          extract them into a privately maintained gem, allowing other
-          components in our platform to integrate with other services
-          within Salesforce effortlessly.
+          Led and mentored a team in PostgreSQL query optimization for
+          Heroku's core database in 2019, and continues to lead
+          efforts to maintain and improve good query performance to
+          provide the best possible experience for users of the Heroku
+          API.
 
         - >
-          Led the greenfield development of resource binding in the
-          next generation Heroku addons platform, bridging a new
-          GraphQL API to the Open Service Broker specification.
+          Added MFA, device activation and account recovery to Heroku
+          authentication, giving users more flexibility in securing
+          their data, while reducing the internal cost of abuse to the
+          platform.
 
         - >
-          Led and mentored a team in PostgreSQL query optimization as
-          part ongoing sustainability work.
+          Led efforts to adapt parts of our Identity application for
+          general use and extract them into a privately maintained
+          gem, allowing other components in our platform to integrate
+          with other services within Salesforce effortlessly.
 
     - :title: Software Engineer
       :dates: 2015 - 2018
@@ -53,7 +55,7 @@
         - >
           Initiated the Last Week in ManageIQ blog series to both
           promote the latest developments to our platform and better
-          engage with the Open Source communityi
+          engage with the Open Source community
 
     - :title: Ruby Engineer
       :dates: 2014 - 2015
