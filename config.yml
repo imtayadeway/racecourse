@@ -19,11 +19,11 @@
       :achievements:
         - >
           Adding MFA, device activation and account recovery to Heroku
-          authentication, which is currently in private beta. Led
-          efforts to adapt parts of our Identity application for
-          general use and extract them into a privately maintained
-          gem, allowing other components in our platform to integrate
-          with other services within Salesforce effortlessly.
+          authentication, which is currently in beta. Led efforts to
+          adapt parts of our Identity application for general use and
+          extract them into a privately maintained gem, allowing other
+          components in our platform to integrate with other services
+          within Salesforce effortlessly.
 
         - >
           Led the greenfield development of resource binding in the
